@@ -20,7 +20,7 @@ func main() {
 
 func checkConnection(conn net.Conn, err error) {
 	if err!= nil {
-		fmt.Printf("error %v connecting!")
+		fmt.Printf("error %v connecting!", err)
 		os.Exit(1)
 	}
 			
